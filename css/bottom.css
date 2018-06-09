@@ -1,0 +1,114 @@
+#bottom {
+  height: 100%;
+  width: 100%;
+}
+
+#bottom h2 {
+  margin: 3em 0 1em;
+  text-align: left;
+  font-size: 2em;
+}
+
+#bottom .sp {
+  height: 0.175em;
+  width: 6em;
+  margin: 1em 0 2em;
+  border-radius: 1em;
+}
+
+#bottom .sp.white {
+  background: #eee;
+}
+#bottom .sp {
+  background: #555;
+}
+
+#bottom p {
+  text-align: left;
+  line-height: 1.85em;
+}
+
+#bottom #contact {
+  background: #333333;
+  min-height: 100vh;
+}
+
+#bottom #contact h2,
+#contact p {
+  color: #eee;
+}
+
+/* start-about  */
+#about {
+  min-height: 100vh;
+  padding-bottom: 3em;
+  background: white;
+}
+
+#about p {
+  padding-bottom: 1em;
+}
+
+#about #wrap {
+  padding-bottom: 3em;
+}
+#images {
+  padding: 1em 0;
+}
+#images img {
+  height: 12em;
+  object-fit: cover;
+}
+
+/* end-about  */
+
+/* form styling */
+.form-control {
+  margin: 1em 0;
+}
+
+label {
+  padding: 0.5em 0;
+  display: block;
+  color: white;
+}
+
+input,
+textarea {
+  width: 100%;
+  background: transparent;
+  padding: 1em 2em;
+  border: 1px solid #ddd;
+  color: white;
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #ddd;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #ddd;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #ddd;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  /* Firefox 18- */
+  color: #ddd;
+}
+
+#send-btn {
+  font-size: 1em;
+  border-radius: 5em;
+  border: 0;
+  padding: 1em 5em;
+  color: white;
+}

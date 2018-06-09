@@ -1,0 +1,138 @@
+#top {
+  width: 100%;
+  position: relative;
+}
+
+#top p,
+#top h1 {
+  padding: 7.5px 0;
+}
+
+#top p {
+  line-height: 2em;
+}
+
+#social-links a {
+  font-size: 1em;
+  display: inline-block;
+  height: 3em;
+  width: 3em;
+  margin: 0 0.45em;
+  line-height: 3em;
+}
+
+#social-links i {
+  color: white;
+  font-size: 2.5em;
+}
+
+#logo {
+  height: 120px;
+  width: 120px;
+  object-fit: contain;
+}
+
+#particles-js {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  opacity: 0.6;
+}
+
+.bf {
+  z-index: 1;
+  position: relative;
+}
+
+#wrapper {
+  z-index: 1;
+  position: relative;
+}
+
+#coming-soon,
+#date-time h3,
+#top p {
+  color: #f1f1f1;
+}
+
+#date-time {
+  margin: 0.8em 0;
+}
+
+@media (min-height: 600px) {
+  #top,
+  #particles-js {
+    height: 100%;
+  }
+}
+
+@media (max-height: 600px) {
+  #top,
+  #particles-js {
+    height: auto;
+    padding: 1.5em 0 2.5em;
+  }
+}
+
+@media (min-width: 1240px) {
+  #coming-soon {
+    font-size: 5em;
+  }
+}
+
+@media (min-width: 1024px) {
+  #coming-soon {
+    font-size: 4.5em;
+  }
+  #date-time h3 {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 1023px) {
+  #coming-soon {
+    font-size: 3.85em;
+  }
+
+  #date-time h3 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 767px) {
+  #coming-soon {
+    font-size: 3em;
+  }
+  #date-time #top h3 {
+    font-size: 1em;
+  }
+
+  #date-time #top p {
+    font-size: 0.75em;
+  }
+}
+
+@media (max-width: 320px) {
+  #coming-soon {
+    font-size: 1.7em;
+  }
+
+  #top #desc {
+    font-size: 0.8em;
+  }
+}
+
+#learn-more {
+  padding: 1em 3em;
+  color: white;
+  border: 2px solid white;
+  background: transparent;
+  font-size: 0.75em;
+  margin: 2.5em;
+  border-radius: 5em;
+  letter-spacing: 0.5px;
+}
