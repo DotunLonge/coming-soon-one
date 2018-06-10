@@ -8,6 +8,10 @@ body,
   position: relative;
 }
 
+.m {
+  text-align: center;
+}
+
 button,
 a {
   outline: none !important;
@@ -48,13 +52,15 @@ h1,
 h2,
 h3,
 h4,
-h5,
-p {
+h5 {
   color: #333;
   margin: 0;
   padding: 0;
 }
 
+p {
+  color: #888686;
+}
 .center-wrapper {
   height: 100%;
   width: 100%;

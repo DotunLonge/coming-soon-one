@@ -10,17 +10,37 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/top.css">
     <link rel="stylesheet" href="./css/bottom.css">
+    <link rel="stylesheet" href="./css/preview.css">
     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/brands.css" integrity="sha384-VGCZwiSnlHXYDojsRqeMn3IVvdzTx5JEuHgqZ3bYLCLUBV8rvihHApoA1Aso2TZA"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/fontawesome.css" integrity="sha384-GVa9GOgVQgOk+TNYXu7S/InPTfSDTtBalSgkgqQ7sCik56N9ztlkoTr2f/T44oKV"
-        crossorigin="anonymous">
-
+    <link rel="stylesheet" href="./css/font-awesome/fontawesome-all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:500|Raleway:300,400" rel="stylesheet">
     <script src="js/config.js"></script>
 </head>
 
 <body>
+
+    <div class="sidebar">
+        <div id="left">
+            <div class="form-control">
+                <label for="color-picker">Pick A Color Theme</label>
+                <input type="color" name="color-picker" id="color-picker" value="#6a5acd">
+            </div>
+
+            <div class="form-control">
+                <label>Display Counter ?</label>
+                <button class="display-counter-btn active" id="true" type="button">True</button>
+                <button class="display-counter-btn" id="false" type="button">False</button>
+            </div>
+
+        </div>
+        <div id="right">
+            <button id="cog">
+                <i class="fas fa-cog"></i>
+            </button>
+        </div>
+
+    </div>
+
     <div class="xs-12" id="wrapper">
         <div class="xs-12" id="top">
             <div id="particles-js"></div>
@@ -39,8 +59,15 @@
                         <p class="xs-12" id="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel recusandae quasi cumque officiis omnis!
                             Laudantium cupiditate.
                         </p>
-                        <button id="learn-more">Learn More</button>
+                        <div class="x-12">
+                            <div class="xs-6 m">
+                                <button id="learn-more">Learn More</button>
+                            </div>
+                            <div class="xs-6 m">
 
+                                <button id="contact-us">Contact Us</button>
+                            </div>
+                        </div>
                         <div class="xs-12" id="social-links">
                             <a href="#" target="_blank">
                                 <i class="fab fa-facebook"></i>

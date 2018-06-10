@@ -1,0 +1,67 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  width: auto;
+  height: auto;
+  z-index: 10;
+  left: 0;
+  transition: 200ms;
+}
+
+.sidebar.hide-away {
+  left: -175px;
+}
+
+.sidebar #left {
+  padding: 1em;
+  background: white;
+  height: 100%;
+  width: 175px;
+  float: left;
+  border-bottom-right-radius: 6px;
+  box-shadow: 0px 0px 1px 0px #eee;
+}
+
+.sidebar #right {
+  float: left;
+}
+
+.sidebar #left label {
+  color: #333;
+  font-size: 0.9em;
+}
+
+.sidebar #left #color-picker {
+  padding: 0;
+  border: 0;
+  height: 2.5em;
+  background: unset;
+}
+
+#cog {
+  background: #eee;
+  font-size: 1.5em;
+  border: 0;
+  color: white;
+  filter: contrast(100%);
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#cog i {
+  color: #333;
+}
+
+.display-counter-btn {
+  height: 2em;
+  background: #ddd;
+  color: white;
+  border: 0;
+  font-size: 1em;
+  width: 4em;
+  border-radius: 1em;
+}
+
+.display-counter-btn.active {
+  background: rgb(100, 200, 145);
+}
