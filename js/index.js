@@ -1,15 +1,6 @@
 $(() => {
-  // Beginning Of Function Declarations
-  const colorRelated = function(backgroundColor) {
-    $("#top").css("background-color", backgroundColor);
-    $("#particles-js").css("backgroundColor", backgroundColor);
-    //norm
-    $("#send-btn").css("background", backgroundColor);
-    $(".sp#configed").css("background", backgroundColor);
-    $("#contact-us")
-      // .css("background", backgroundColor)
-      .css("color", backgroundColor);
-
+  // Beginning Of Jquery Function Declarations
+  function attachListeners(backgroundColor) {
     $("#learn-more")
       .mouseenter(function() {
         $(this)
@@ -76,10 +67,10 @@ $(() => {
           .css("background", "white")
           .css("color", backgroundColor);
       });
-  };
-  const toggleCount = function(showCount) {
+  }
+  function toggleCount(showCount) {
     if (showCount) {
-      $("#date-time").countdown(setDate, function(event) {
+      $("#date-time").countdown(config.setDate, function(event) {
         $(this).html(`
           <div class="xs-3">
               <h3 id='days'>${event.strftime("%D")}</h3>
@@ -103,25 +94,25 @@ $(() => {
       $("#date-time").countdown("pause");
       $("#date-time").html("");
     }
-  };
+  }
   // End Of Function Declarations
 
   // Beginning Of Function Calls
-  colorRelated(backgroundColor);
-  toggleCount(backgroundColor);
+  attachListeners(config.backgroundColor);
+  toggleCount(config.showCount);
   // End Of Function Calls
 
   // Beginning Of Conditionals
-  if (showParticles) {
+  if (config.showParticles) {
     particlesJS.load("particles-js", "./js/particles/config.json");
   }
-  if (useOnlyColorForBackground === false) {
-    if (staticBackground) {
-      $("#top").backstretch(staticBackgroundImage);
+  if (config.useOnlyColorForBackground === false) {
+    if (config.staticBackground) {
+      $("#top").backstretch(config.staticBackgroundImage);
     } else {
-      $("#top").backstretch(dynamicBackgroundImages, {
-        duration: transitionDuration,
-        fade: transitionFade
+      $("#top").backstretch(config.dynamicBackgroundImages, {
+        duration: config.transitionDuration,
+        fade: config.transitionFade
       });
     }
   }
@@ -130,7 +121,9 @@ $(() => {
   // Beginning Of Listeners
   $("#color-picker").on("change", function(e) {
     colorRelated(e.target.value);
+    attachListeners(e.target.value);
   });
+
   $("#true").on("click", function(e) {
     toggleCount(true);
     $(this).addClass("active");

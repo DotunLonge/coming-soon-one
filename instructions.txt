@@ -1,0 +1,39 @@
+Thank you for purchasing this theme. 
+
+If you have any issues please send an email to oludotunlonge@gmail.com.
+
+To configure this template to your liking, just navigate to the config.js file inside the js folder.
+
+In there you can adjust the following properties:
+
+Particle Visibility: setting true/false here will show/hide the particles dancing around in the background.
+
+showCount: setting true/false here will show/hide the countdown timer.
+
+setDate: the date you want the countdown to run to, i.e. it will display the difference in time between today and the date you set here.
+
+useOnlyColorForBackground: setting true/false will set the background of the top section to just a color or a picture/pictures with the 
+color overlaying the image.
+
+backgroundColor: the color you want the site to have as it's theme color,
+
+staticBackground: setting this to true/false determines if the background transitions through a number of pictures or shows only a picture,
+
+staticBackgroundImage: this is where you put the path to the image you would like to show in the background i.e. "img/three.jpeg",
+
+dynamicBackgroundImages: this is where you put multiple paths in an array that you would like to see transition from one to the other on your site i.e.  [
+  "img/one.jpeg",
+  "img/two.jpeg",
+  "img/three.jpeg",
+  "img/four.jpeg"
+],
+
+transitionDuration: this is where you set the value in milliseconds how long you would want an image to stay visible before transitioning to the next image i.e. 3000,
+
+transitionFade: this is where you set the value in milliseconds how long you would want the fading transition between images to lag for i.e. 2000
+
+
+DO NOT remove any of the properties of the config file in it's entirety i.e.
+deleting transitionFade or some other property like setDate simply because you aren't using them. If you follow the instructions, the underlying logic should sort itself out and know what to ignore/use. Thank you.
+
+Enjoy your new product.
